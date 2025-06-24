@@ -17,7 +17,7 @@ socketio = SocketIO(app)
 
 # Configuración base de datos PostgreSQL
 DB_PARAMS = {
-    'dbname': os.environ.get('PG_DB', 'iotdb'),
+    'dbname': os.environ.get('PG_DB', 'iotdb_j6pa'),
     'user': os.environ.get('PG_USER', 'iotdb_j6pa_user'),
     'password': os.environ.get('PG_PASS', 'L6ySrCrfLiK8JEYla0bfR8wRxTlidI6g'),
     'host': os.environ.get('PG_HOST', 'dpg-d1ccpn2dbo4c73coig90-a'),
