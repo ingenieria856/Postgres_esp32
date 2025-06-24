@@ -13,7 +13,7 @@ from psycopg2.extras import RealDictCursor
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'mi_clave_secreta')
-socketio = SocketIO(app, async_mode='threading')
+socketio = SocketIO(app)
 
 # Configuración base de datos PostgreSQL
 DB_PARAMS = {
